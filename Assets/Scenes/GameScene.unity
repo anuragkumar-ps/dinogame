@@ -594,6 +594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2c14790aec94ed5b272d736f74e5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMenu: {fileID: 2140485865}
+  gameOverMenu: {fileID: 401032511}
+  gameMenu: {fileID: 1325517260}
 --- !u!1 &382908070
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,8 +680,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892387238}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 723310162}
+        m_TargetAssemblyTypeName: UI.GameplayManager, Assembly-CSharp
         m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
@@ -928,8 +931,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892387238}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 338870465}
+        m_TargetAssemblyTypeName: UI.GameOverManager, Assembly-CSharp
         m_MethodName: OnMenuButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -1211,6 +1214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ad1ee56f3d64320b4be3d01c6a30b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMenu: {fileID: 2140485865}
+  gameMenu: {fileID: 1325517260}
 --- !u!1 &602358132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a92833f27ab48fcbce1a21580f1bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMenu: {fileID: 1325517260}
+  gameOverMenu: {fileID: 401032511}
 --- !u!1 &790404756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,8 +1503,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892387238}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 338870465}
+        m_TargetAssemblyTypeName: UI.GameOverManager, Assembly-CSharp
         m_MethodName: OnRestartButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2294,8 +2301,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892387238}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 518646214}
+        m_TargetAssemblyTypeName: UI.StartMenuManager, Assembly-CSharp
         m_MethodName: OnStartButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2565,7 +2572,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892387239}
-  - component: {fileID: 1892387238}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -2573,21 +2579,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1892387238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892387237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f6ed2017b70440cb9ebc0ee84a7125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startMenu: {fileID: 2140485865}
-  gameMenu: {fileID: 1325517260}
-  gameOverMenu: {fileID: 401032511}
 --- !u!4 &1892387239
 Transform:
   m_ObjectHideFlags: 0
