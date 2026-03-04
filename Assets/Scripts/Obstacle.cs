@@ -1,3 +1,4 @@
+using UI;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
@@ -8,14 +9,14 @@ public class Obstacle : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.OnGameStart += OnGameStart;
-        GameManager.OnGameOver += OnGameOver;
+        StartMenuManager.OnGameStart += OnGameStart;
+        GameplayManager.OnGameOver += OnGameOver;
     }
     
     private void OnDisable()
     {
-        GameManager.OnGameStart -= OnGameStart;
-        GameManager.OnGameOver -= OnGameOver;
+        StartMenuManager.OnGameStart -= OnGameStart;
+        GameplayManager.OnGameOver -= OnGameOver;
     }
     
     private void OnGameStart()

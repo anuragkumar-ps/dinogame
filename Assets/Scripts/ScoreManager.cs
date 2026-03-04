@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,14 +15,14 @@ public class ScoreManager : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.OnGameStart += OnGameStart;
-        GameManager.OnGameOver += OnGameOver;
+        StartMenuManager.OnGameStart += OnGameStart;
+        GameplayManager.OnGameOver += OnGameOver;
     }
 
     private void OnDisable()
     {
-        GameManager.OnGameStart -= OnGameStart;
-        GameManager.OnGameOver -= OnGameOver;
+        StartMenuManager.OnGameStart -= OnGameStart;
+        GameplayManager.OnGameOver -= OnGameOver;
     }
 
     private void Awake()

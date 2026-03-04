@@ -1,6 +1,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -29,14 +30,14 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void SubscribeEvents()
     {
-        GameManager.OnGameStart += OnGameStart;
-        GameManager.OnGameOver += OnGameOver;
+        StartMenuManager.OnGameStart += OnGameStart;
+        GameplayManager.OnGameOver += OnGameOver;
     }
 
     private void UnSubscribeEvents()
     {
-        GameManager.OnGameStart -= OnGameStart;
-        GameManager.OnGameOver -= OnGameOver;
+        StartMenuManager.OnGameStart -= OnGameStart;
+        GameplayManager.OnGameOver -= OnGameOver;
     }
 
     private void OnEnable()
